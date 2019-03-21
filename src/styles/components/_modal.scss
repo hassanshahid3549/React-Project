@@ -1,0 +1,37 @@
+.ReactModalPortal > div{  //Focus on Modal Div.
+ opacity: 0;
+}
+.ReactModalPortal .ReactModal__Overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: opacity 200ms ease-in-out;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    // transition: opacity 200ms ease-in-out;
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+.modal {
+    background: $light-blue;
+    color:white;
+    border-radius:0.5rem; 
+    outline: none;
+    padding: $m-size + 5rem;
+    text-align: center;
+    word-break: break-all;
+}
+.modal-title{
+    margin-bottom: 0 0 $l-size 0 ;
+}
+.modal-button{
+border:none ;
+border-radius: 1rem; 
+float: down;
+color:white;
+background: $dark-blue;
+padding:1rem;
+}
